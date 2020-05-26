@@ -1,0 +1,22 @@
+{
+  "name": "citest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hikki0123/citest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hikki0123/citest/issues"
+  },
+  "homepage": "https://github.com/hikki0123/citest#readme",
+  "devDependencies": {
+    "jest": "^26.0.1"
+  }
+}
