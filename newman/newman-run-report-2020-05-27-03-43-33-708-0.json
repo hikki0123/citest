@@ -1,0 +1,647 @@
+{
+  "collection": {
+    "_": {
+      "postman_id": "a8aa3423-f917-40f5-ae90-d88bbe98daaf"
+    },
+    "item": [
+      {
+        "id": "ca0cb05e-a577-40d8-9bfc-ff59b966cc7d",
+        "name": "http://weather.livedoor.com/forecast/webservice/json/v1?city=400040",
+        "request": {
+          "url": {
+            "protocol": "https",
+            "path": [
+              ""
+            ],
+            "host": [
+              "api",
+              "zipaddress",
+              "net"
+            ],
+            "query": [
+              {
+                "key": "zipcode",
+                "value": "1670043"
+              }
+            ],
+            "variable": []
+          },
+          "method": "GET"
+        },
+        "response": [],
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "id": "06efbc95-81c5-4763-9c0c-fadbdbcf776c",
+              "type": "text/javascript",
+              "exec": [
+                "pm.test(\"Status code is 200\", function () {",
+                "    pm.response.to.have.status(201);",
+                "});"
+              ],
+              "_lastExecutionId": "5827c613-4eec-4106-a5e3-298a4cba6572"
+            }
+          }
+        ]
+      }
+    ],
+    "event": [],
+    "protocolProfileBehavior": {},
+    "variable": [],
+    "info": {
+      "_postman_id": "a8aa3423-f917-40f5-ae90-d88bbe98daaf",
+      "name": "testcollection",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    }
+  },
+  "environment": {
+    "id": "55397edf-9e82-4050-a476-0d2cafcda91d",
+    "values": []
+  },
+  "globals": {
+    "id": "0b5f0eff-19e2-4591-ab0b-f72b7574f122",
+    "values": []
+  },
+  "run": {
+    "stats": {
+      "iterations": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "items": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "scripts": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "requests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "tests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "assertions": {
+        "total": 1,
+        "pending": 0,
+        "failed": 1
+      },
+      "testScripts": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequestScripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      }
+    },
+    "timings": {
+      "responseAverage": 230,
+      "responseMin": 230,
+      "responseMax": 230,
+      "responseSd": 0,
+      "dnsAverage": 0,
+      "dnsMin": 0,
+      "dnsMax": 0,
+      "dnsSd": 0,
+      "firstByteAverage": 0,
+      "firstByteMin": 0,
+      "firstByteMax": 0,
+      "firstByteSd": 0,
+      "started": 1590551013396,
+      "completed": 1590551013703
+    },
+    "executions": [
+      {
+        "cursor": {
+          "position": 0,
+          "iteration": 0,
+          "length": 1,
+          "cycles": 1,
+          "empty": false,
+          "eof": false,
+          "bof": true,
+          "cr": false,
+          "ref": "d0f1d469-f1b2-41f0-a7b3-2b9f78ad4885",
+          "httpRequestId": "59f2070f-113b-4565-a585-55959ee701a6"
+        },
+        "item": {
+          "id": "ca0cb05e-a577-40d8-9bfc-ff59b966cc7d",
+          "name": "http://weather.livedoor.com/forecast/webservice/json/v1?city=400040",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "path": [
+                ""
+              ],
+              "host": [
+                "api",
+                "zipaddress",
+                "net"
+              ],
+              "query": [
+                {
+                  "key": "zipcode",
+                  "value": "1670043"
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET"
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "06efbc95-81c5-4763-9c0c-fadbdbcf776c",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(201);",
+                  "});"
+                ],
+                "_lastExecutionId": "5827c613-4eec-4106-a5e3-298a4cba6572"
+              }
+            }
+          ]
+        },
+        "request": {
+          "url": {
+            "protocol": "https",
+            "path": [
+              ""
+            ],
+            "host": [
+              "api",
+              "zipaddress",
+              "net"
+            ],
+            "query": [
+              {
+                "key": "zipcode",
+                "value": "1670043"
+              }
+            ],
+            "variable": []
+          },
+          "header": [
+            {
+              "key": "User-Agent",
+              "value": "PostmanRuntime/7.25.0",
+              "system": true
+            },
+            {
+              "key": "Accept",
+              "value": "*/*",
+              "system": true
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache",
+              "system": true
+            },
+            {
+              "key": "Postman-Token",
+              "value": "34f28c77-f7d5-4927-84e7-7389e921347f",
+              "system": true
+            },
+            {
+              "key": "Host",
+              "value": "api.zipaddress.net",
+              "system": true
+            },
+            {
+              "key": "Accept-Encoding",
+              "value": "gzip, deflate, br",
+              "system": true
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive",
+              "system": true
+            }
+          ],
+          "method": "GET"
+        },
+        "response": {
+          "id": "0120e731-4c93-42a9-977e-44c525d4113f",
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Server",
+              "value": "nginx/1.1.19"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 27 May 2020 03:43:33 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=UTF-8"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "stream": {
+            "type": "Buffer",
+            "data": [
+              123,
+              34,
+              99,
+              111,
+              100,
+              101,
+              34,
+              58,
+              50,
+              48,
+              48,
+              44,
+              34,
+              100,
+              97,
+              116,
+              97,
+              34,
+              58,
+              123,
+              34,
+              112,
+              114,
+              101,
+              102,
+              34,
+              58,
+              34,
+              92,
+              117,
+              54,
+              55,
+              55,
+              49,
+              92,
+              117,
+              52,
+              101,
+              97,
+              99,
+              92,
+              117,
+              57,
+              48,
+              102,
+              100,
+              34,
+              44,
+              34,
+              97,
+              100,
+              100,
+              114,
+              101,
+              115,
+              115,
+              34,
+              58,
+              34,
+              92,
+              117,
+              54,
+              55,
+              52,
+              57,
+              92,
+              117,
+              52,
+              101,
+              50,
+              54,
+              92,
+              117,
+              53,
+              51,
+              51,
+              97,
+              92,
+              117,
+              52,
+              101,
+              48,
+              97,
+              92,
+              117,
+              56,
+              51,
+              55,
+              98,
+              34,
+              44,
+              34,
+              99,
+              105,
+              116,
+              121,
+              34,
+              58,
+              34,
+              92,
+              117,
+              54,
+              55,
+              52,
+              57,
+              92,
+              117,
+              52,
+              101,
+              50,
+              54,
+              92,
+              117,
+              53,
+              51,
+              51,
+              97,
+              34,
+              44,
+              34,
+              116,
+              111,
+              119,
+              110,
+              34,
+              58,
+              34,
+              92,
+              117,
+              52,
+              101,
+              48,
+              97,
+              92,
+              117,
+              56,
+              51,
+              55,
+              98,
+              34,
+              44,
+              34,
+              102,
+              117,
+              108,
+              108,
+              65,
+              100,
+              100,
+              114,
+              101,
+              115,
+              115,
+              34,
+              58,
+              34,
+              92,
+              117,
+              54,
+              55,
+              55,
+              49,
+              92,
+              117,
+              52,
+              101,
+              97,
+              99,
+              92,
+              117,
+              57,
+              48,
+              102,
+              100,
+              92,
+              117,
+              54,
+              55,
+              52,
+              57,
+              92,
+              117,
+              52,
+              101,
+              50,
+              54,
+              92,
+              117,
+              53,
+              51,
+              51,
+              97,
+              92,
+              117,
+              52,
+              101,
+              48,
+              97,
+              92,
+              117,
+              56,
+              51,
+              55,
+              98,
+              34,
+              125,
+              125
+            ]
+          },
+          "cookie": [],
+          "responseTime": 230,
+          "responseSize": 207
+        },
+        "id": "ca0cb05e-a577-40d8-9bfc-ff59b966cc7d",
+        "assertions": [
+          {
+            "assertion": "Status code is 200",
+            "skipped": false,
+            "error": {
+              "name": "AssertionError",
+              "index": 0,
+              "test": "Status code is 200",
+              "message": "expected response to have status code 201 but got 200",
+              "stack": "AssertionError: expected response to have status code 201 but got 200\n   at Object.eval sandbox-script.js:1:1)"
+            }
+          }
+        ]
+      }
+    ],
+    "transfers": {
+      "responseTotal": 207
+    },
+    "failures": [
+      {
+        "error": {
+          "name": "AssertionError",
+          "index": 0,
+          "test": "Status code is 200",
+          "message": "expected response to have status code 201 but got 200",
+          "stack": "AssertionError: expected response to have status code 201 but got 200\n   at Object.eval sandbox-script.js:1:1)",
+          "checksum": "367b277f1ef6dd5c2a581605f9a131a0",
+          "id": "ac25ad89-06b4-440b-b032-ab22f7658e42",
+          "timestamp": 1590551013689,
+          "stacktrace": [
+            {
+              "fileName": "sandbox-script.js",
+              "lineNumber": 1,
+              "functionName": "Object.eval",
+              "typeName": "Object",
+              "methodName": "eval",
+              "columnNumber": 1,
+              "native": false
+            }
+          ]
+        },
+        "at": "assertion:0 in test-script",
+        "source": {
+          "id": "ca0cb05e-a577-40d8-9bfc-ff59b966cc7d",
+          "name": "http://weather.livedoor.com/forecast/webservice/json/v1?city=400040",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "path": [
+                ""
+              ],
+              "host": [
+                "api",
+                "zipaddress",
+                "net"
+              ],
+              "query": [
+                {
+                  "key": "zipcode",
+                  "value": "1670043"
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET"
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "06efbc95-81c5-4763-9c0c-fadbdbcf776c",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(201);",
+                  "});"
+                ],
+                "_lastExecutionId": "5827c613-4eec-4106-a5e3-298a4cba6572"
+              }
+            }
+          ]
+        },
+        "parent": {
+          "_": {
+            "postman_id": "a8aa3423-f917-40f5-ae90-d88bbe98daaf"
+          },
+          "item": [
+            {
+              "id": "ca0cb05e-a577-40d8-9bfc-ff59b966cc7d",
+              "name": "http://weather.livedoor.com/forecast/webservice/json/v1?city=400040",
+              "request": {
+                "url": {
+                  "protocol": "https",
+                  "path": [
+                    ""
+                  ],
+                  "host": [
+                    "api",
+                    "zipaddress",
+                    "net"
+                  ],
+                  "query": [
+                    {
+                      "key": "zipcode",
+                      "value": "1670043"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET"
+              },
+              "response": [],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "06efbc95-81c5-4763-9c0c-fadbdbcf776c",
+                    "type": "text/javascript",
+                    "exec": [
+                      "pm.test(\"Status code is 200\", function () {",
+                      "    pm.response.to.have.status(201);",
+                      "});"
+                    ],
+                    "_lastExecutionId": "5827c613-4eec-4106-a5e3-298a4cba6572"
+                  }
+                }
+              ]
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {},
+          "variable": [],
+          "info": {
+            "_postman_id": "a8aa3423-f917-40f5-ae90-d88bbe98daaf",
+            "name": "testcollection",
+            "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+          }
+        },
+        "cursor": {
+          "position": 0,
+          "iteration": 0,
+          "length": 1,
+          "cycles": 1,
+          "empty": false,
+          "eof": false,
+          "bof": true,
+          "cr": false,
+          "ref": "d0f1d469-f1b2-41f0-a7b3-2b9f78ad4885",
+          "httpRequestId": "59f2070f-113b-4565-a585-55959ee701a6",
+          "scriptId": "06efbc95-81c5-4763-9c0c-fadbdbcf776c",
+          "execution": "5827c613-4eec-4106-a5e3-298a4cba6572"
+        }
+      }
+    ],
+    "error": null
+  }
+}

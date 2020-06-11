@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "newman": "newman run"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,12 @@
   },
   "homepage": "https://github.com/hikki0123/citest#readme",
   "devDependencies": {
-    "jest": "^26.0.1"
+    "aws-sdk": "^2.684.0",
+    "jest": "^26.0.1",
+    "jest-runner-newman": "^1.0.5",
+    "mysql": "^2.18.1"
+  },
+  "dependencies": {
+    "newman": "^5.0.1"
   }
 }

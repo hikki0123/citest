@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "a8aa3423-f917-40f5-ae90-d88bbe98daaf",
+		"name": "testcollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://weather.livedoor.com/forecast/webservice/json/v1?city=400040",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "06efbc95-81c5-4763-9c0c-fadbdbcf776c",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.zipaddress.net/?zipcode=1670043",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zipaddress",
+						"net"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "zipcode",
+							"value": "1670043"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
